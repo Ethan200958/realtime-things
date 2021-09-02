@@ -23,7 +23,7 @@ function gotResult(error, result) {
         console.error(error);
     } else {
         console.log("0 Current errors");
-        console.log(results);
+        console.log(result);
         document.getElementById("person_name").innerHTML = result[0].label;
         document.getElementById("person_accuracy").innerHTML = result[0].confidence.toFixed(3);
     }
